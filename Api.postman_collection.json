@@ -1,0 +1,1740 @@
+{
+	"info": {
+		"_postman_id": "150a940e-e84c-4bb2-93de-eed21b9094b2",
+		"name": "Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20497581",
+		"_collection_link": "https://crimson-space-297802.postman.co/workspace/Team-Workspace~a57d491e-45ee-4cfb-8641-4cc710a31791/collection/20497581-150a940e-e84c-4bb2-93de-eed21b9094b2?action=share&creator=20497581&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "address",
+					"item": [
+						{
+							"name": "search address",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/user/address?offset=0&limit=100&sort[column]=name&sort[order]=asc",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"address"
+									],
+									"query": [
+										{
+											"key": "offset",
+											"value": "0"
+										},
+										{
+											"key": "limit",
+											"value": "100"
+										},
+										{
+											"key": "sort[column]",
+											"value": "name"
+										},
+										{
+											"key": "sort[order]",
+											"value": "asc"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "add adress",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "  {\r\n        \"street1\": \"Street 1\",\r\n        \"street2\": \"Building 1, Floor 2, Apartment 32\",\r\n        \"country\": \"\",\r\n        \"city\": \"\",\r\n        \"zipcode\": \"00112\",\r\n        \"longitude\": \"55.2926\",\r\n        \"latitude\": \"25.2674\",\r\n        \"phone\":\"0000000000\",\r\n        \"type\":\"home\"\r\n }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/user/address",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"user",
+												"address"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Tue, 16 May 2023 08:53:13 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Apache"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Vary",
+											"value": "Authorization"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"\",\n    \"statusCode\": 0\n}"
+								}
+							]
+						},
+						{
+							"name": "add adress",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n        \"street1\": \"Street 1\",\r\n        \"street2\": \"Building 1, Floor 2, Apartment 32\",\r\n        \"country\": \"\",\r\n        \"city\": \"\",\r\n        \"zipcode\": \"00112\",\r\n        \"longitude\": \"55.2926\",\r\n        \"latitude\": \"25.2674\",\r\n        \"phone\":\"0000000000\",\r\n        \"type\":\"home\"\r\n }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/user/address",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"address"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "add adress",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "  {\r\n        \"street1\": \"Street 1\",\r\n        \"street2\": \"Building 1, Floor 2, Apartment 32\",\r\n        \"country\": \"\",\r\n        \"city\": \"\",\r\n        \"zipcode\": \"00112\",\r\n        \"longitude\": \"55.2926\",\r\n        \"latitude\": \"25.2674\",\r\n        \"phone\":\"0000000000\",\r\n        \"type\":\"home\"\r\n }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/user/address",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"user",
+												"address"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Tue, 16 May 2023 08:53:13 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Apache"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Vary",
+											"value": "Authorization"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"\",\n    \"statusCode\": 0\n}"
+								}
+							]
+						},
+						{
+							"name": "update-adress",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n        \"street1\": \"Street 1\",\r\n        \"street2\": \"Building 1, Floor 2, Apartment 32\",\r\n        \"country\": \"\",\r\n        \"city\": \"\",\r\n        \"zipcode\": \"00112\",\r\n        \"longitude\": \"55.2926\",\r\n        \"latitude\": \"25.2674\",\r\n        \"phone\":\"0000000000\",\r\n        \"type\":\"home\"\r\n }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/user/address/2",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"address",
+										"2"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "add adress",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "  {\r\n        \"street1\": \"Street 1\",\r\n        \"street2\": \"Building 1, Floor 2, Apartment 32\",\r\n        \"country\": \"\",\r\n        \"city\": \"\",\r\n        \"zipcode\": \"00112\",\r\n        \"longitude\": \"55.2926\",\r\n        \"latitude\": \"25.2674\",\r\n        \"phone\":\"0000000000\",\r\n        \"type\":\"home\"\r\n }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/user/address",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"user",
+												"address"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Tue, 16 May 2023 08:53:13 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Apache"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Vary",
+											"value": "Authorization"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"\",\n    \"statusCode\": 0\n}"
+								}
+							]
+						},
+						{
+							"name": "delete adress",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/user/address/2",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"address",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "reset password",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/user/resetpassword",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										"resetpassword"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "wishlist",
+					"item": [
+						{
+							"name": "search wishlist",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/wishlist/?offset=0&limit=100&sort[column]=name&sort[order]=asc",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"wishlist",
+										""
+									],
+									"query": [
+										{
+											"key": "offset",
+											"value": "0"
+										},
+										{
+											"key": "limit",
+											"value": "100"
+										},
+										{
+											"key": "sort[column]",
+											"value": "name"
+										},
+										{
+											"key": "sort[order]",
+											"value": "asc"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "add adress",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "  {\r\n        \"street1\": \"Street 1\",\r\n        \"street2\": \"Building 1, Floor 2, Apartment 32\",\r\n        \"country\": \"\",\r\n        \"city\": \"\",\r\n        \"zipcode\": \"00112\",\r\n        \"longitude\": \"55.2926\",\r\n        \"latitude\": \"25.2674\",\r\n        \"phone\":\"0000000000\",\r\n        \"type\":\"home\"\r\n }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/user/address",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"user",
+												"address"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Tue, 16 May 2023 08:53:13 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Apache"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Vary",
+											"value": "Authorization"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"\",\n    \"statusCode\": 0\n}"
+								}
+							]
+						},
+						{
+							"name": "add to wishlist",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n      \"product_ids\": [\r\n      {\"product_ID\" : \"9355\",\"on_sale\":1},\r\n      {\"product_ID\" : \"9344\",\"on_sale\":0}]\r\n\r\n  }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/wishlist",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"wishlist"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "add adress",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "  {\r\n        \"street1\": \"Street 1\",\r\n        \"street2\": \"Building 1, Floor 2, Apartment 32\",\r\n        \"country\": \"\",\r\n        \"city\": \"\",\r\n        \"zipcode\": \"00112\",\r\n        \"longitude\": \"55.2926\",\r\n        \"latitude\": \"25.2674\",\r\n        \"phone\":\"0000000000\",\r\n        \"type\":\"home\"\r\n }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/user/address",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"user",
+												"address"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Tue, 16 May 2023 08:53:13 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Apache"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Vary",
+											"value": "Authorization"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"\",\n    \"statusCode\": 0\n}"
+								}
+							]
+						},
+						{
+							"name": "update-wishlist",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "  {\r\n        \"street1\": \"Street 1\",\r\n        \"street2\": \"Building 1, Floor 2, Apartment 32\",\r\n        \"country\": \"\",\r\n        \"city\": \"\",\r\n        \"zipcode\": \"00112\",\r\n        \"longitude\": \"55.2926\",\r\n        \"latitude\": \"25.2674\",\r\n        \"phone\":\"0000000000\",\r\n        \"type\":\"home\"\r\n }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/wishlist/2",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"wishlist",
+										"2"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "add adress",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "  {\r\n        \"street1\": \"Street 1\",\r\n        \"street2\": \"Building 1, Floor 2, Apartment 32\",\r\n        \"country\": \"\",\r\n        \"city\": \"\",\r\n        \"zipcode\": \"00112\",\r\n        \"longitude\": \"55.2926\",\r\n        \"latitude\": \"25.2674\",\r\n        \"phone\":\"0000000000\",\r\n        \"type\":\"home\"\r\n }",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/user/address",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"user",
+												"address"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Date",
+											"value": "Tue, 16 May 2023 08:53:13 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "Apache"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Vary",
+											"value": "Authorization"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"\",\n    \"statusCode\": 0\n}"
+								}
+							]
+						},
+						{
+							"name": "delete wishlist",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/wishlist/40",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"wishlist",
+										"40"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const jsonData = pm.response.json();\r",
+									"if(jsonData.data.token) {\r",
+									"    pm.environment.set(\"authorization\", '' + jsonData.data.token);\r",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"strictSSL": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_email\":\"clixxdxentd@erouad.com\"\r\n   ,\"user_pass\":\"welcome1\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/auth/login",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							],
+							"query": [
+								{
+									"key": "user_email",
+									"value": "muhammadqamh",
+									"disabled": true
+								},
+								{
+									"key": "user_pass",
+									"value": "lklkj",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const jsonData = pm.response.json();\r",
+									"if(jsonData.data.token) {\r",
+									"    pm.environment.set(\"authorization\", '' + jsonData.data.token);\r",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"followOriginalHttpMethod": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_login\": \"dcxlisddent\",\r\n    \"user_nicename\": \"dsClditexrendetfde1\",\r\n    \"user_email\": \"clixxdxentd@erouad.com\",\r\n    \"user_phone\": \"+9718855ss050\",\r\n    \"user_pass\": \"welcome1\",\r\n    \"password_confirmation\": \"welcome1\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/auth/register",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{baseUrl}}/auth/logout",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "logout",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/auth/logout",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"auth",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Apr 2022 08:30:34 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 29 Apr 2022 08:30:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.2"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 0,\n    \"message\": \"auth:logout:done\",\n    \"data\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "me",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/auth/me",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user-update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"user_phone\": \"+9718850;llkm000\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/auth/user/21",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth",
+								"user",
+								"21"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "category",
+			"item": [
+				{
+					"name": "category-search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/categories/?offset=0&limit=23&sort[column]=name&sort[order]=asc",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"categories",
+								""
+							],
+							"query": [
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "23"
+								},
+								{
+									"key": "sort[column]",
+									"value": "name"
+								},
+								{
+									"key": "sort[order]",
+									"value": "asc"
+								},
+								{
+									"key": "fields[name][value]",
+									"value": "lkjlk",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "category-search",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/categories/?offset=0&limit=100&sort[column]=name&sort[order]=asc",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categories",
+										""
+									],
+									"query": [
+										{
+											"key": "offset",
+											"value": "0"
+										},
+										{
+											"key": "limit",
+											"value": "100"
+										},
+										{
+											"key": "sort[column]",
+											"value": "name"
+										},
+										{
+											"key": "sort[order]",
+											"value": "asc"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 18 May 2023 10:35:05 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=99"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 0,\n    \"message\": \"records:search:done\",\n    \"data\": {\n        \"current_page\": 1,\n        \"data\": [\n            {\n                \"term_id\": 1,\n                \"name\": \"Uncategorized\",\n                \"slug\": \"uncategorized\",\n                \"term_group\": 0,\n                \"meta\": [],\n                \"taxonomy\": [\n                    {\n                        \"term_taxonomy_id\": 1,\n                        \"term_id\": 1,\n                        \"taxonomy\": \"category\",\n                        \"description\": \"\",\n                        \"parent\": 0,\n                        \"count\": 1\n                    }\n                ]\n            }\n        ],\n        \"first_page_url\": \"https://ewewewew.rouad.tech/public/api/categories?page=1\",\n        \"from\": 1,\n        \"last_page\": 1,\n        \"last_page_url\": \"https://ewewewew.rouad.tech/public/api/categories?page=1\",\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"https://ewewewew.rouad.tech/public/api/categories?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": null,\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"next_page_url\": null,\n        \"path\": \"https://ewewewew.rouad.tech/public/api/categories\",\n        \"per_page\": 100,\n        \"prev_page_url\": null,\n        \"to\": 1,\n        \"total\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/categories/15",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"categories",
+								"15"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "product-search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/product/?offset=0&limit=100&sort[column]=name&sort[order]=asc",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"product",
+								""
+							],
+							"query": [
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "100"
+								},
+								{
+									"key": "sort[column]",
+									"value": "name"
+								},
+								{
+									"key": "sort[order]",
+									"value": "asc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "product-get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/product/14",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"product",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "related product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/product/14",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"product",
+								"14"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "coupon",
+			"item": [
+				{
+					"name": "add coupon",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"session_key\":\"19\",\r\n    \"coupon_name\":\"test-coupon\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/coupon",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"coupon"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add coupon Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/coupon/remove",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"coupon",
+								"remove"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cart",
+			"item": [
+				{
+					"name": "add to cart",
+					"protocolProfileBehavior": {
+						"followOriginalHttpMethod": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"session_key\": \"19\",\r\n     \"session_value\": [\r\n    {\r\n      \"product_id\": 9356,\r\n      \"quantity\": 3\r\n    },\r\n       {\r\n      \"product_id\": 0,\r\n      \"quantity\": 0\r\n    }\r\n   \r\n  ]\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/cart",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get cart",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/cart/321",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cart",
+								"321"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "add order",
+					"protocolProfileBehavior": {
+						"followOriginalHttpMethod": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"payment_method\": \"cod\",\r\n    \"payment_method_title\": \"cod\",\r\n    \"set_paid\": false,\r\n\t\"status\":\"processing\",\r\n    \"billing\": {\r\n      \"adress_id\":1\r\n        },\r\n      \"shipping\": {\r\n      \"adress_id\":1\r\n        },\r\n        \"cart_id\":19,\r\n  \"shipping_lines\": [\r\n    {\r\n      \"method_id\": \"flat_rate\",\r\n      \"method_title\": \"Flat Rate\",\r\n      \"total\": \"10.00\"\r\n    }\r\n  ]\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/order/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"order",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "my order",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/order/?offset=0&limit=100&sort[column]=name&sort[order]=asc",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"order",
+								""
+							],
+							"query": [
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "100"
+								},
+								{
+									"key": "sort[column]",
+									"value": "name"
+								},
+								{
+									"key": "sort[order]",
+									"value": "asc"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "banner",
+			"item": [
+				{
+					"name": "banners",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/banner/?offset=0&limit=100&sort[column]=name&sort[order]=asc",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"banner",
+								""
+							],
+							"query": [
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "100"
+								},
+								{
+									"key": "sort[column]",
+									"value": "name"
+								},
+								{
+									"key": "sort[order]",
+									"value": "asc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "banner",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/banner/9350",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"banner",
+								"9350"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "files",
+			"item": [
+				{
+					"name": "get files",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/file/12",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"file",
+								"12"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "comments",
+			"item": [
+				{
+					"name": "search comment",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{baseUrl}}/comments?offset=0&limit=100&sort[column]=name&sort[order]=asc",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"comments"
+							],
+							"query": [
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "100"
+								},
+								{
+									"key": "sort[column]",
+									"value": "name"
+								},
+								{
+									"key": "sort[order]",
+									"value": "asc"
+								},
+								{
+									"key": "fields[comment_post_ID][value]",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "fields[user_id][value]",
+									"value": "0",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get files",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/banner/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"banner",
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "add comment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \r\n\"comment_post_ID\":\"14\",\r\n     \"comment_author\":\"12\",\r\n        \"comment_author_email\":\"2\",\r\n        \"comment_approved\":\"2\",\r\n        \"user_id\":23,\r\n        \"comment_date\":\"2\",\r\n        \"comment_content\":\"eerwer\",\r\n        \"comment_type\":\"2\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/comments",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit comment",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"comment_content\": \"sdfsfsdf....\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/comments/14",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"comments",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete comment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/commet/14",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"commet",
+								"14"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "store",
+			"item": [
+				{
+					"name": "logo",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "address",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "store detailes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/store?offset=0&limit=23&sort[column]=name&sort[order]=asc",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"store"
+							],
+							"query": [
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "23"
+								},
+								{
+									"key": "sort[column]",
+									"value": "name"
+								},
+								{
+									"key": "sort[order]",
+									"value": "asc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pages",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/pages?offset=0&limit=23&sort[column]=name&sort[order]=asc&fields[post_name][value]=Portfolio&fields[post_name][value]=privacy-policy&fields[post_name][value]=",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"pages"
+							],
+							"query": [
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "23"
+								},
+								{
+									"key": "sort[column]",
+									"value": "name"
+								},
+								{
+									"key": "sort[order]",
+									"value": "asc"
+								},
+								{
+									"key": "fields[post_name][value]",
+									"value": "Portfolio"
+								},
+								{
+									"key": "fields[post_name][value]",
+									"value": "privacy-policy"
+								},
+								{
+									"key": "fields[post_name][value]",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "vendor",
+			"item": [
+				{
+					"name": "search vendor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/vendors/?offset=0&limit=122&sort[column]=ID&sort[order]=desc",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"vendors",
+								""
+							],
+							"query": [
+								{
+									"key": "offset",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "122"
+								},
+								{
+									"key": "sort[column]",
+									"value": "ID"
+								},
+								{
+									"key": "sort[order]",
+									"value": "desc"
+								},
+								{
+									"key": "fields[user_login][value]",
+									"value": "vendor12",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get vendor",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/vendors/6",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"vendors",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{authorization}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"var Header = require('postman-collection').Header;",
+					"pm.request.headers.add(new Header(\"Accept:application/json\"))"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
